@@ -1,0 +1,19 @@
+{
+  "name": "audiowaveforms",
+  "version": "1.0.0",
+  "description": "Generate audiowaveforms SVG",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagnusThor/audiowaveforms.git"
+  },
+  "author": "Magnus Thor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagnusThor/audiowaveforms/issues"
+  },
+  "homepage": "https://github.com/MagnusThor/audiowaveforms#readme"
+}
