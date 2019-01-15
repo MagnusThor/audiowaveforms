@@ -31,11 +31,10 @@ var ExampleApp = (function () {
         })
             .catch(console.error);
     };
-    ExampleApp.getInstance = function (el, filePicker) {
-        return new this(el, filePicker);
-    };
+    ExampleApp.prototype.addEventListener = function () { };
     return ExampleApp;
 }());
-document.addEventListener("DOMContentLoaded", function () {
+(function () {
     ExampleApp.getInstance(document.querySelector("svg"), document.querySelector("input"));
 });
+;

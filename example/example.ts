@@ -8,12 +8,15 @@ class ExampleApp {
         const source = audioContext.createBufferSource();
         return audioContext.decodeAudioData(buffer)
             .then( (audioBuffer:AudioBuffer ) => {
+
                 this.audiowaveform = new AudioWaveform(audioBuffer, this.audio, this.el);
+
                 source.buffer = audioBuffer;
                 source.connect(audioContext.destination);
                 window.setInterval( () => {
                         this.audiowaveform.updateAudioPosition();
                 },1000 / 60)  ; 
+                
                 this.audio.src = URL.createObjectURL(this.audioFile);
 
             })
